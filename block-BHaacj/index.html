@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72b9c7ec9e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container margin-200  flex">
+    <header class="header-bar">
+        <div class="container flex">
             <div class="brand flex">
                 <a href="">
                     <img src="assets/logo.png" alt="Image of the brand">
                 </a>
                 <strong class="brand-text">JOURNEY</strong>
             </div>
-            <nav class="header-nav">
+            <nav class="nav-menu">
                 <ul class="flex">
-                    <li><a href="">home</a></li>
+                    <li><a class="active" href="">home</a></li>
                     <li><a href="">top destination</a></li>
                     <li><a href="">recommended places</a></li>
                     <li><a href="">contact us</a></li>
@@ -27,26 +28,333 @@
             </nav>
         </div>
     </header>
-
     <main>
-        <section>
-            <div class="container  margin-100">
-                <div class="hero">
-                    <h1>LET'S BEGIN</h1>
-                    <div class="circle-container ">
-                        <div class="circle circle-1"></div>
+        <div class="second-container">
+            <section class="hero">
+                <h1>LET'S BEGIN</h1>
                 
-                        <div class="circle circle-2"></div>
-                  
-                        <div class="circle circle-1"></div>
-                    </div>
-                    <h3>We assist you to choose the best.</h3>
-                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                <div class="flex justify-center column">
+                    <div class="dot"></div>
+                    <div class="dot active-dot"></div>
+                    <div class="dot"></div>
                 </div>
-            </div>
-           
-        </section>
+                <p>We assist you to choose the best.</p>
+                <div class="circle"><i class="fa-solid fa-angle-down"></i></div>
+                <form class="flex item-start">
+                    <fieldset class="flex-48">
+                        <div>
+                           <label for="destination">Choose Your destination</label>
+                            <input class="form-control" type="text" name="destination" placeholder="Type your destination" id="destination">
+                        </div>
+                        <div class="flex item-start margin-top" >
+                           <div> <label for="Check in">Check In Date</label>
+                            <input class="form-control" name="date" type="date" id="Check in" 
+                            placeholder="Check in"></div>
+                            <div>
+                                <label for="Check out">Check Out Date</label>
+                            <input class="form-control" name="date" type="date" id="Check out" placeholder="Check out">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <fieldset class="flex-48">
+                       <div class="flex item-start">
+                       <div>
+                        <label for="">How many rooms ?</label>
+                        <select class="form-control" name="" id="">
+                            <option value="1 room">room</option>
+                            <option value="1 room">room</option>
+                            <option value="1 room">room</option>
+                            <option value="1 room">room</option>
+                            <option value="1 room">room</option>
+                        </select>
+                       </div>
+                        
+                        <div>
+                            <label for="adult">Adult</label>
+                        <select class="form-control" name="adult" id="adult">
+                            <option value="1 room">1</option>
+                            <option value="1 room">2</option>
+                            <option value="1 room">3</option>
+                            <option value="1 room">4</option>
+                            <option value="1 room">5</option>
+                        </select>
+                        </div>
+
+                        <div>
+                            <label for="child">Children</label>
+                        <select class="form-control" name="child" id="child">
+                            <option value="1 room">0</option>
+                            <option value="1 room">1</option>
+                            <option value="1 room">2</option>
+                            <option value="1 room">3</option>
+                            <option value="1 room">4</option>
+                        </select>
+                        </div>
+                       </div>
+                       <input class="form-control btn btn-primary margin-top" type="submit" value="check availability">
+
+
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <div class="container padding-20">
+                    <article class="about wraper text-center">
+                        <h2>YOUR <strong>JOURNEY</strong>  IS OUR PRIORITY</h2>
+                        <p>Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis lectus. Duis nec lobortis velit. Vivamus
+                            id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.</p>
+                            <a class="btn btn-explore btn-primary" href="">continue explore</a>
+                    </article>
+                </div>
+            </section>
+            <section >
+
+
+                <!--Blog-->
+
+
+                <div class="blog flex">
+                    <div class="font-0 flex-50 relative" >
+                        <img src="assets/tm-img-01.jpg" alt="">
+
+
+                        <div class="flex box-right absolute">
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                            </div>
+
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <article class="blog-text blog-text-left  flex-50 ">
+                        <h3>Europe's most visfited places</h3>
+                        <p>Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.</p>
+                        <a class="btn btn-secondary" href="">continue reading</a>
+                    </article>
+                </div>
+
+
+
+
+                <div class="blog flex">
+
+                    <article class="blog-text secondary-blog blog-text-right flex-50 ">
+                        <h3>Europe's most visfited places</h3>
+                        <p>Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.</p>
+                        <a class="btn third-btn btn-secondary" href="">continue reading</a>
+                    </article>
+
+
+
+
+                    <div class="font-0 flex-50 relative" >
+                        <img src="assets/tm-img-02.jpg" alt="">
+
+
+                        <div class="flex box-left absolute">
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                            </div>
+
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+
+
+                <div class="blog flex">
+                    <div class="font-0 flex-50 relative" >
+                        <img src="assets/tm-img-03.jpg" alt="">
+
+
+                        <div class="flex box-right absolute">
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                            </div>
+
+                            <div class="box center">
+                                <div class="icon-wraper" >
+                                   <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <article class="blog-text blog-text-left  flex-50 ">
+                        <h3>Europe's most visfited places</h3>
+                        <p>Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.</p>
+                        <a class="btn btn-secondary" href="">continue reading</a>
+                    </article>
+                </div>
+
+            </section>
+
+            <!--Maps-->
+
+            <section class="maps flex">
+               
+                    <div class="grow text-center font-0">
+                        <img src="assets/north-america.png" alt="image of north america">
+                        <p>north america</p>
+                    </div>
+
+                    <div class="grow text-center font-0">
+                        <img src="assets/south-america.png" alt="image of south america">
+                        <p>south america</p>
+                    </div>
+                    <div class="grow text-center font-0">
+                        <img src="assets/europe.png" alt="image of europe">
+                        <p>europe</p>
+                    </div>
+
+                    <div class="grow text-center asia font-0" >
+                        <img src="assets/asia.png" alt="">
+                        <p>asia</p>
+                    </div>
+
+                    <div class="grow text-center font-0">
+                        <img src="assets/africa.png" alt="image of africa">
+                        <p>africa</p>
+                    </div>
+
+                    
+                    <div class="grow text-center font-0">
+                        <img src="assets/australia.png" alt="image of australia">
+                        <p>australia</p>
+                    </div>
+
+                    <div class="grow text-center font-0">
+                        <img src="assets/antartica.png" alt="
+                        image of antartica">
+                        <p>antartica</p>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--Recommended-->
+
+
+            <section class="recommended ">
+                <article class="recommended-items stretch flex">
+                    <div class="stretch flex-30 font-0"><img src="assets/tm-img-06.jpg" alt="">
+                    </div>
+                    <div class="flex-50 recommended-items-content">
+                        
+                    <h3>Asia's most popular places</h3>
+                    <h4>singapore</h4>
+                    <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    <img class="curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class=" flex-20 recommended-items-pricing center column">
+                        <h3>$440</h3>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </article>
+
+
+                <article class="recommended-items stretch flex">
+                    <div class="stretch flex-30 font-0"><img src="assets/tm-img-07.jpg" alt="">
+                    </div>
+                    <div class="flex-50 recommended-items-content">
+                        
+                    <h3>NULLAM EGET EST A NISL</h3>
+                    <h4>Yangon, Myanmar</h4>
+                    <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    <img class="curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class=" flex-20 recommended-items-pricing center column">
+                        <h3>$450</h3>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </article>
+
+
+                <article class="recommended-items stretch flex">
+                    <div class="stretch flex-30 font-0"><img src="assets/tm-img-05.jpg" alt="">
+                    </div>
+                    <div class="flex-50 recommended-items-content">
+                        
+                    <h3>PROIN INTERDUM ULLAMCORPER</h3>
+                    <h4>Bangkok, Thailand</h4>
+                    <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    <img class="curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class=" flex-20 recommended-items-pricing center column">
+                        <h3>$460</h3>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </article>
+
+
+
+                <article class="recommended-items stretch flex">
+                    <div class="stretch flex-30 font-0"><img src="assets/tm-img-04.jpg" alt="">
+                    </div>
+                    <div class="flex-50 recommended-items-content">
+                        
+                    <h3>LOREM IPSUM DOLOR SIT</h3>
+                    <h4> Vientiane, Laos</h4>
+                    <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    <img class="curve" src="assets/button-curve.png" alt="">
+                    </div>
+                    <div class=" flex-20 recommended-items-pricing center column">
+                        <h3>$470</h3>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </article>
+                <div class="text-center">
+                    <a class="btn btn-primary" href="">Show more places</a>
+                </div>
+
+                
+            </section>
+            <section class="contact font-0">
+               
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14964.4163254602!2d85.79581975936887!3d20.33731850475974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19097b5eec6f0d%3A0x4274e59c94ba4023!2sOD11%20Baripada%20Kitchen!5e0!3m2!1sen!2sin!4v1652161378880!5m2!1sen!2sin" width="908" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+               <div class="overlay"></div>
+               <form class="flex-30">
+                   <fieldset>
+                       <div class="flex">
+                           <input class="form-control flex-48" type="text" name="name" placeholder="Name">
+                           <input class="form-control flex-48" type="email" name="email"
+                           placeholder="Email">
+                       </div>
+                       <input class="form-control"  type="text" name="subject" placeholder="Subject">
+                       <textarea class="form-control" name="message"  id="" cols="30" rows="5" placeholder="message"></textarea>
+                       <input class="form-control btn btn-primary"  type="submit" value="SEND MESSAGE NOW">
+                   </fieldset>
+               </form>
+
+            </section>
+            <footer class="footer">
+                <small>Copyright &copy; 2020 Your Company. Designed by Template Mo</small>
+            </footer>
+
+        </div>
+
     </main>
+  
+
     
 </body>
 </html>
